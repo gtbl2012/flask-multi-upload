@@ -6,13 +6,9 @@
 </head>
 <body>
 
-<h1>Upload Successful!</h1>
+<h1>上传成功!</h1>
 
-Here are the files you just uploaded. Your form data was discarded in this demo
-app, but if you check your terminal window you can see that all their names and
-values were submitted to the server.<p>
-
-<a href="{{ url_for('index') }}">Back to front page</a><p>
+<a href="{{ url_for('index') }}">回到首页</a><p>
 
 {% for file in files %}
     <h2>{{ file }}</h2>
